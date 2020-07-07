@@ -1,0 +1,375 @@
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+
+.navbar {
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.11);
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+/* TODO: 加入背景圖片 */
+/* #呼叫Html的ID */
+#header {
+    background-image: url('../img/870860.jpg');
+    background-size: cover;
+    /* 把背景圖片固定在後方 */
+    background-attachment: fixed;
+    padding: 250px 0;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+#header:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    position: absolute;
+}
+
+#header>.container {
+    position: relative;
+    z-index: 4;
+
+}
+
+/*=============================================
+=                introSection                      =
+=============================================*/
+.intro {
+    font-family: "微軟正黑體";
+    font-weight: 500;
+}
+
+/*=============================================
+=               graphicSection                   =
+=============================================*/
+
+.o1 {
+    display: flex;
+}
+
+.orange1 {
+    width: 150px;
+    height: 170px;
+    margin-right: 35px;
+}
+
+.oo1 {
+    margin-top: 35px;
+}
+
+.o2 {
+    display: flex;
+}
+
+.orange2 {
+    width: 170px;
+    height: 170px;
+    margin-left: 35px;
+}
+
+.oo2 {
+    margin-top: 35px;
+}
+
+.o3 {
+    display: flex;
+}
+
+.orange3 {
+    width: 170px;
+    height: 180px;
+    margin-right: 35px;
+}
+
+.oo3 {
+    margin-top: 35px;
+}
+
+.carousel-control-prev {
+    margin-left: -150px;
+}
+
+.carousel-control-next {
+    margin-right: -150px;
+}
+
+@media(max-width: 575.99px) {
+
+    .carousel-control-prev {
+        margin-left: -30px;
+    }
+
+    .carousel-control-next {
+        margin-right: -30px;
+    }
+}
+
+@media(min-width: 576px) and (max-width: 767.99px) {
+
+    .carousel-control-prev {
+        margin-left: -70px;
+    }
+
+    .carousel-control-next {
+        margin-right: -70px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991.99px) {
+
+    .carousel-control-prev {
+        margin-left: -75px;
+    }
+
+    .carousel-control-next {
+        margin-right: -75px;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199.99px) {
+
+    .carousel-control-prev {
+        margin-left: -95px;
+    }
+
+    .carousel-control-next {
+        margin-right: -95px;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    .carousel-control-prev {
+        margin-left: -130px;
+    }
+
+    .carousel-control-next {
+        margin-right: -130px;
+    }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(60%);
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    filter: invert(100%);
+}
+
+/*=============================================
+=               productSection                    =
+=============================================*/
+
+.card-box {
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.card-box:hover {
+    background: white;
+    box-shadow: 0px 22px 22px rgba(0, 0, 0, .25);
+}
+
+@media(min-width: 576px) and (max-width: 767.99px) {
+    .card-box {
+        height: 350px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991.99px) {
+    .card-box {
+        height: 360px;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199.99px) {
+    .card-box {
+        height: 400px;
+    }
+}
+
+/*=============================================
+=                 Process                    =
+=============================================*/
+
+/* TODO: 設定Hover特效 */
+
+[id^='processImage'] {
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    filter: grayscale(100%);
+    transition: all .5s ease;
+}
+
+[id^='processImage']>.process-text {
+    color: white;
+    font-size: 20pt;
+    font-weight: 700;
+    text-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+[id^='processImage']:hover {
+    filter: grayscale(0%);
+}
+
+[id^='processImage']:hover>.process-text {
+    opacity: 1;
+    font-size: 35px;
+}
+
+[id^='processImage'],
+.process-text {
+    transition: all .2s ease;
+}
+
+/* 放入背景圖片 */
+
+#processImage1 {
+    background-image: url('../img/processImage1.jpg');
+}
+
+#processImage2 {
+    background-image: url('../img/processImage2.jpg');
+}
+
+#processImage3 {
+    background-image: url('../img/processImage3.jpg');
+}
+
+#processImage4 {
+    background-image: url('../img/processImage4.jpg');
+}
+
+#processImage5 {
+    background-image: url('../img/processImage5.jpg');
+}
+
+#processImage6 {
+    background-image: url('../img/processImage6.jpg');
+}
+
+#processImage7 {
+    background-image: url('../img/processImage7.jpg');
+}
+
+#processImage8 {
+    background-image: url('../img/processImage8.jpg');
+}
+
+/*=============================================
+=                  Start Now                  =
+=============================================*/
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-end p {
+    font-size: 8px;
+    margin: 0;
+}
+
+#goBackBtn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+}
+
+/*=============================================
+=                   AD-BOX                    =
+=============================================*/
+
+.ad-box {
+    width: 300px;
+    position: fixed;
+    right: -275px;
+    bottom: 80px;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
+}
+
+.ad-box.active {
+    right: 0px;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #ddd;
+}
+
+.ad-toggle-btn {
+    width: 25px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+}
+
+.ad-toggle-btn>i {
+    transform: rotateZ(90deg);
+}
+
+.ad-toggle-btn:hover {
+    color: #666;
+}
+
+.right-part {
+    padding: 10px;
+}
+
+.right-part>p {
+    margin-bottom: 0;
+}

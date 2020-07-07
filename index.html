@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yun Jun Design</title>
+    <link rel="icon" href="./img/YJUN.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/YJUN.ico" type="image/x-icon">
+    <!-- Bootstrap官方網站 https://getbootstrap.com/ -->
+    <!-- 連結Bootstrap.min.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- 客製化Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- 使用wow滾動動畫連結 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+    <!-- 使用style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- 使用Boostrap Navbar -->
+    <!-- 設定Navbar緊貼畫面上緣 -->
+    <!-- 點擊滾動目標 -->
+    <!-- b4-navbar-default -->
+    <!--               固定頂端                    改變navbar顏色 -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-danger">
+        <!-- LOGO -->
+        <a class="navbar-brand" href="#">Yun Jun Design</a>
+        <!-- 手持裝置的導覽按鈕 -->
+        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- 導覽按鈕圖示 -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <!--                  mr若改ml 標體會移到右邊 -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <!--                按下跳到指定主題 -->
+                    <a class="nav-link" href="#introSection">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#graphicSection">Graphic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#productSection">Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#processSection">Process</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- header -->
+    <header id="header" class="jumbotron text-center text-white bg-dark">
+        <div class="container">
+            <div class="animate__animated animate__zoomIn">
+                <h1>Interior design makes life better</h1>
+                <p>You have better choices to let me create better designs for you.</p>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- introSection -->
+    <!--       設定introSection 上下padding為5倍 -->
+    <!--                       上下padding為5倍高-->
+    <section id="introSection" class="py-5 bg-secondary text-white">
+        <h1 class="section-title text-center text-white mb-5">About</h1>
+        <div class="container">
+            <!-- 修正排版為三項排一排 -->
+            <div class="row">
+                <div class="col-md-3 col-sm-12 col-12">
+                    <!-- 設定我的照片變圓型 -->
+                    <img class="w-100 rounded-circle" src="./img/870861.jpg" alt="user photo">
+                </div>
+                <div class="col-md-7 col-sm-12 col-12 pl-5">
+                    <br>
+                    <h3 class="title">Innovative product designer</h3>
+                    <h4 class="name">Chen,Yun-Jun</h4>
+                    <br>
+                    <p class="intro">I look forward to having the opportunity to use my professional ability to create
+                        favorite designs for you, and to increase the convenience in daily life, to make your life
+                        better and bring a good mood.
+                    </p>
+                </div>
+            </div>
+            <!-- 設定此區塊距離上方5倍margin -->
+            <!-- 修正排版在md時六個排一排 sm三個排一排 sm以下兩個排一排-->
+            <div class="row mt-5">
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-pen-nib fa-2x text-white" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-white">Illustration</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-magic fa-2x text-white" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-white">Photoshop</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-cut fa-2x text-white" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-white">Edit videos</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-pencil-alt fa-2x text-white" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-white">Pencil sketch</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-spray-can fa-2x text-white" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-white">Make models</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-laptop fa-2x text-white" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-white">Program coding</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- introSection end -->
+
+    <!-- graphicSection -->
+    <section id="graphicSection" class="py-5">
+        <h1 class="section-title mb-5 text-center text-warning">Graphic</h1>
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner text-warning">
+                    <div class="carousel-item active">
+                        <!-- 第一頁 內容 -->
+                        <div class="row justify-content-center py-5">
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <img class="business-card w-100" src="./img/business card.png" alt="business card">
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <h3 class="title">Business Card Design</h3>
+                                <h5 class="name">Let flowers add your temperament</h5><br>
+                                <p>Use floral elements to add feminine elegance to female users,<br>
+                                    make customers impressed with temperament.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 第一頁 結束 -->
+                    </div>
+
+                    <div class="carousel-item">
+                        <!-- 第二頁 內容 -->
+                        <div class="row justify-content-center py-5">
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <img class="product-rendering w-100" src="./img/Product rendering.png"
+                                    alt="product rendering">
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <h3 class="title">Product Stereo Rendering</h3>
+                                <h5 class="name">Use illustrator to render stereoscopic renderings</h5><br>
+                                <p>2D plane can still be rendered with light and shadow to make the product more
+                                    three-dimensional.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 第二頁 結束 -->
+                    </div>
+
+                    <div class="carousel-item">
+                        <!-- 第三頁 內容 -->
+                        <div class="row justify-content-center py-5">
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <img class="door-post w-100" src="./img/door post.png" alt="door post">
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <h3 class="title">2019 Ping Shun Xing Door Post</h3>
+                                <h5 class="name">Good luck in the Year of the Pig</h5><br>
+                                <p>2019 is the year of the pig, add the front and back of the pig to the door post,
+                                    More auspicious elements such as totems, lanterns and ingots are added.<br><br>
+                                    The biggest highlight is that Ping An Shunxing used circles to continue strokes,
+                                    Means a symbol of reunion and endlessness,
+                                    And add the concept of pig nose under Shunxing to make the picture more lovely and
+                                    interesting.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 第三頁 結束 -->
+                    </div>
+
+                    <div class="carousel-item">
+                        <!-- 第四頁 內容 -->
+                        <div class="row justify-content-center py-5">
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <img class="T-shirt-design w-100" src="./img/T-shirt.png" alt="T-shirt design">
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <h3 class="title">T-shirt Design</h3>
+                                <h5 class="name">Ma Lu Yang's human interest</h5><br>
+                                <p>Maruyang Pinang Club became popular in Japan because of a young Japanese writer,
+                                    Now it has received more than 500 groups of Japanese friends.<br><br>
+                                    Ma Luyang will invite Japanese friends to try Taiwanese betel nuts,
+                                    Also made betel nuts into pendants,
+                                    Loved by the Japanese, and bought back to give away in Japan.
+                                    And when Ma Yang took a picture, he would match the double seven gesture with
+                                    Japanese friends,
+                                    It also caused the signature action of Ma Luyang, which is very distinctive.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 第四頁 結束 -->
+                    </div>
+
+                    <div class="carousel-item">
+                        <!-- 第五頁 內容 -->
+                        <div class="row justify-content-center py-5">
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <img class="creative-poster w-100" src="./img/Agricultural products creative poster.png"
+                                    alt="Agricultural products creative poster">
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <h3 class="title">Agricultural Products Creative Poster</h3>
+                                <h5 class="name">Indulge in the sweet and delicious atmosphere of oranges</h5><br>
+                                <div class="o1"><img class="orange1" src="./img/orange1.png" alt="orange1">
+                                    <p class="oo1"><strong>Orange Petals</strong><br><br>
+                                        Oranges have many nutritious orange complexes, symbolized by the simplest
+                                        straight line.
+                                    </p>
+                                </div>
+                                <div class="o2">
+                                    <p class="oo2"><strong>Orange Bud</strong><br><br>
+                                        It is better to use irregular circles to represent the uneven skin of oranges.
+                                    </p>
+                                    <img class="orange2" src="./img/orange2.png" alt="orange2">
+                                </div>
+                                <div class="o3"><img class="orange3" src="./img/orange3.png" alt="orange3">
+                                    <p class="oo3"><strong>Flower Orange</strong><br><br>
+                                        Use a straight line as an orange network to accompany the flesh.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 第五頁 結束 -->
+                    </div>
+
+                    <div class="carousel-item">
+                        <!-- 第六頁 內容 -->
+                        <div class="row justify-content-center py-5">
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <img class="Annual-calendar w-100" src="./img/Annual calendar.png"
+                                    alt="Annual calendar">
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <h3 class="title">2019 Annual Calendar</h3>
+                                <h5 class="name">Strong contrast between orange and blue</h5><br>
+                                <p>Orange and blue are the main,<br>
+                                    To achieve a strong contrasting color,<br>
+                                    And use two layers of transparency and the method of picture cutting,<br>
+                                    Make the picture reach a balanced ratio.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 第六頁 結束 -->
+                    </div>
+
+                    <div class="carousel-item">
+                        <!-- 第七頁 內容 -->
+                        <div class="row justify-content-center py-5">
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <img class="Night-Club w-100" src="./img/Night Club.png" alt="Night Club">
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-12">
+                                <h3 class="title">Night Club</h3>
+                                <h5 class="name">Please give me sleep</h5><br>
+                                <p>The theme is the wish of the design department,<br>
+                                    go to bed ! ! Please sleep for me ! ! !<br>
+                                    After staying up late to the tired time,<br>
+                                    It will be abnormally HIGH ! ! !<br><br>
+                                    Choose a club style suitable for this theme,<br>
+                                    Deeply evoke our original desire,<br>
+                                    It is also the most impossible wish.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- 第七頁 結束 -->
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+    </section>
+    <!-- graphicSection end -->
+
+    <!-- productSection -->
+    <section id="productSection" class="py-5 bg-secondary text-white">
+        <h1 class="section-title text-center text-white mb-5">Product</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-12 text-center">
+                    <div class="card-box text-warning">
+                        <img class="SHARK w-100" src="./img/SHARK.png" alt="SHARK">
+                        <h3>Shark</h3>
+                        <p>Handle the dragon fruit effortlessly.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12 text-center">
+                    <div class="card-box text-warning">
+                        <img class="CRYBABY w-100" src="./img/CRYBABY.png" alt="CRYBABY">
+                        <h3>Crybaby</h3>
+                        <p>Don't cry, don't cry, tears are pearl.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12 text-center">
+                    <div class="card-box text-warning">
+                        <img class="bamboo w-100" src="./img/bamboo.png" alt="bamboo">
+                        <h3>Bamboo</h3>
+                        <p>Take you back to nature.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12 text-center">
+                    <div class="card-box text-warning">
+                        <img class="Succulent-alien w-100" src="./img/Succulent alien.png" alt="Succulent alien">
+                        <h3>Succulent Alien</h3>
+                        <p>Take good care of your succulent.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12 text-center">
+                    <div class="card-box text-warning">
+                        <img class="STORAGE-TABLE w-100" src="./img/STORAGE TABLE.png" alt="STORAGE TABLE">
+                        <h3>Storage Table</h3>
+                        <p>The hive brings you more space.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-12 text-center">
+                    <div class="card-box text-warning">
+                        <img class="SANAYOGE w-100" src="./img/SANAYOGE.png" alt="SANAYOGE">
+                        <h3>Sanayoge</h3>
+                        <p>Perfectly mix out your and my yogurt.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- productSection end -->
+
+    <!-- modalSection -->
+    <section id="modalSection" class="bg-secondary py-5">
+        <div class="row justify-content-center my-5">
+            <div class="col-md-3">
+                <h4 class="text-center text-white mb-4">Cooperation wants to discuss !</h4>
+                <!-- 設定點擊按鈕後顯示彈出式視窗 -->
+                <button class="btn btn-lg btn-block btn-danger" data-toggle="modal" data-target="#modelId">Contact
+                    me !</button>
+            </div>
+        </div>
+    </section>
+    <!-- 加入彈出式視窗 Modal -->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Welcome to contact me !</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- .form-group>input.form-control 輸入框 -->
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input placeholder="Please input your name." type="name" class="form-control"><br>
+                        <label for="">Email</label>
+                        <input placeholder="Please input your email." type="email" class="form-control"><br>
+                        <label for="">Message</label>
+                        <input placeholder="Please leave your message." type="message" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modalSection end -->
+
+    <!-- processSection -->
+    <section id="processSection">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="processImage1" class="col-md-3 col-sm-6">
+                    <div class="process-text">Release</div>
+                </div>
+                <div id="processImage2" class="col-md-3 col-sm-6">
+                    <div class="process-text">Make</div>
+                </div>
+                <div id="processImage3" class="col-md-3 col-sm-6">
+                    <div class="process-text">Discuss</div>
+                </div>
+                <div id="processImage4" class="col-md-3 col-sm-6">
+                    <div class="process-text">Putty</div>
+                </div>
+                <div id="processImage5" class="col-md-3 col-sm-6">
+                    <div class="process-text">Publish</div>
+                </div>
+                <div id="processImage6" class="col-md-3 col-sm-6">
+                    <div class="process-text">Preparation</div>
+                </div>
+                <div id="processImage7" class="col-md-3 col-sm-6">
+                    <div class="process-text">Cut</div>
+                </div>
+                <div id="processImage8" class="col-md-3 col-sm-6">
+                    <div class="process-text">Leather</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- processSection end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="row justify-content-center ml-5 py-5">
+                <div class="col-6 col-sm-3 footer-list">
+                    <h4 class="text-info">CONTACT US</h4>
+                    <a href="mailto:service@brand.com" style="color: #F7CAB3;">4a61c059@stust.edu.com</a>
+                </div>
+                <div class="col-6 col-sm-3 footer-list">
+                    <h5 class="text-uppercase text-info">Company</h5>
+                    <ul>
+                        <li>
+                            <a href="#" style="color: #F7CAB3;">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #F7CAB3;">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #F7CAB3;">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #F7CAB3;">Press</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #F7CAB3;">Bonus</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-3 footer-list">
+                    <h5 class="text-uppercase text-info">Product</h5>
+                    <ul>
+                        <li>
+                            <a href="#" style="color: #F7CAB3;">Enterprice</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #F7CAB3;">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #F7CAB3;">Security</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-3 footer-list">
+                    <h5 class="text-uppercase text-info">Resource</h5>
+                    <ul>
+                        <li>
+                            <a href="#" style="color: #F7CAB3;">Guilde</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #F7CAB3;">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #F7CAB3;">API</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color: #F7CAB3;">Events</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end bg-danger text-white mt-5 py-2">
+            <p class="text-center">2020 all rights reserved by YUN JUN DESIGN Co., Ltd
+            </p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- 設定置底返回按鈕 返回按鈕滾動動畫 -->
+    <button id="goBackBtn" href="#header" class="bg-warning">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <!-- 連結網頁主程式 -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
